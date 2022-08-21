@@ -187,3 +187,6 @@ TARGET_LD_SHIM_LIBS += \
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
+
+# Ignore duplicated rules
+BUILD_BROKEN_DUP_RULES := true
