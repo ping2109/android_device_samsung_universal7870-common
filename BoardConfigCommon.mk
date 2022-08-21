@@ -70,8 +70,9 @@ TARGET_LINUX_KERNEL_VERSION := 3.18
 TARGET_KERNEL_SOURCE := kernel/samsung/exynos7870
 
 # HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_MATRIX_FILE := $(LOCAL_PATH)/configs/compatibility_matrix.xml
-PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/configs/device_framework_compatibility_matrix.xml 
 
 # Use these flags if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
