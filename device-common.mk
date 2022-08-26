@@ -283,3 +283,6 @@ PRODUCT_PACKAGES += \
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal7870-common/universal7870-common-vendor.mk)
+
+# Copy clang-r383902b ld executable
+$(shell cp -r device/samsung/universal7870-common/clang/ld prebuilts/clang/host/linux-x86/clang-r383902b/bin)
