@@ -322,9 +322,6 @@ PRODUCT_PACKAGES += \
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
-#clang-r383902b missing ld executable (needed to build kernel)
-$(shell cp -r device/samsung/universal7870-common/clang/ld prebuilts/clang/host/linux-x86/clang-r383902b/bin)
-
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi/exynos7870/exynos7870.mk)
