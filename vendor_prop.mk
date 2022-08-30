@@ -30,12 +30,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapmaxfree=8m
 
 # ADB
-persist.service.adb.enable=0
-persist.service.debuggable=0
+persist.service.adb.enable=1
+persist.service.debuggable=1
 persist.sys.usb.config=mtp,adb
 ro.adb.secure=0
-ro.debuggable=1
-ro.secure=0
 
 # Do not update the recovery image
 PRODUCT_PROPERTY_OVERRIDES += \
